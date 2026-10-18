@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <scheme name="straxess dark" version="142" parent_scheme="Islands Dark">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
@@ -6,16 +5,10 @@
     <property name="ideVersion">2026.2.3.0.0</property>
     <property name="originalScheme">straxess dark</property>
   </metaInfo>
-  <font>
-    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
-    <option name="EDITOR_FONT_SIZE" value="14" />
-  </font>
-  <console-font>
-    <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
-    <option name="EDITOR_FONT_SIZE" value="14" />
-  </console-font>
   <option name="LINE_SPACING" value="1.2" />
-  <option name="CONSOLE_LINE_SPACING" value="1.2" />
+  <option name="EDITOR_FONT_SIZE" value="14" />
+  <option name="EDITOR_FONT_NAME" value="JetBrains Mono" />
+  <option name="CONSOLE_FONT_NAME" value="JetBrains Mono" />
   <colors>
     <option name="CARET_COLOR" value="B5B6B4" />
     <option name="DOC_COMMENT_LINK" value="AEDAF6" />
@@ -46,38 +39,83 @@
         <option name="FOREGROUND" value="56B9AD" />
       </value>
     </option>
-    <option name="Annotation" baseAttributes="DEFAULT_METADATA" />
-    <option name="Anotation attribute name" baseAttributes="DEFAULT_METADATA" />
+    <option name="Annotation" baseAttributes="ANNOTATION_NAME_ATTRIBUTES" />
+    <option name="Anotation attribute name" baseAttributes="ANNOTATION_ATTRIBUTE_NAME_ATTRIBUTES" />
     <option name="BAD_CHARACTER">
       <value>
         <option name="EFFECT_COLOR" value="EF6969" />
         <option name="EFFECT_TYPE" value="2" />
       </value>
     </option>
-    <option name="BASH.BACKQUOTE" baseAttributes="DEFAULT_STRING" />
-    <option name="BASH.EXTERNAL_COMMAND" baseAttributes="DEFAULT_FUNCTION_CALL" />
-    <option name="BASH.HERE_DOC_END" baseAttributes="DEFAULT_STRING" />
-    <option name="BASH.HERE_DOC_START" baseAttributes="DEFAULT_STRING" />
+    <option name="BASH.BACKQUOTE">
+      <value>
+        <option name="FOREGROUND" value="D89E79" />
+      </value>
+    </option>
+    <option name="BASH.EXTERNAL_COMMAND">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="BASH.HERE_DOC_END">
+      <value>
+        <option name="FOREGROUND" value="D89E79" />
+      </value>
+    </option>
+    <option name="BASH.HERE_DOC_START">
+      <value>
+        <option name="FOREGROUND" value="D89E79" />
+      </value>
+    </option>
     <option name="BASH.SHEBANG" baseAttributes="BASH.LINE_COMMENT" />
-    <option name="BASH.VAR_DEF" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="BASH.VAR_USE" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="Block comment" baseAttributes="DEFAULT_BLOCK_COMMENT" />
+    <option name="BASH.VAR_DEF">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="BASH.VAR_USE">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="Block comment" baseAttributes="JAVA_BLOCK_COMMENT" />
     <option name="CMD_EXPRESSION" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
     <option name="CMD_LABEL" baseAttributes="DEFAULT_LABEL" />
     <option name="CMD_LABEL_REFERENCE" baseAttributes="DEFAULT_LABEL" />
-    <option name="CSS.ATTRIBUTE_NAME" baseAttributes="DEFAULT_INSTANCE_FIELD" />
-    <option name="CSS.CLASS_NAME" baseAttributes="DEFAULT_CLASS_NAME" />
-    <option name="CSS.FUNCTION" baseAttributes="DEFAULT_FUNCTION_CALL" />
-    <option name="CSS.IDENT" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
+    <option name="CSS.ATTRIBUTE_NAME">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="CSS.CLASS_NAME">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="CSS.FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="CSS.IDENT">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
     <option name="CSS.IMPORTANT">
       <value>
         <option name="FOREGROUND" value="D5ABD5" />
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="CSS.PSEUDO" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="CSS.PSEUDO">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
     <option name="CSS.TAG_NAME" baseAttributes="HTML_TAG_NAME" />
-    <option name="CSS.URL" baseAttributes="DEFAULT_STRING" />
+    <option name="CSS.URL" baseAttributes="HTML_ATTRIBUTE_VALUE" />
     <option name="CTRL_CLICKABLE">
       <value>
         <option name="FOREGROUND" value="69A7DB" />
@@ -249,7 +287,7 @@
         <option name="FOREGROUND" value="EDC98F" />
       </value>
     </option>
-    <option name="Enum name" baseAttributes="CLASS_NAME_ATTRIBUTES" />
+    <option name="Enum name" baseAttributes="Class" />
     <option name="FOLLOWED_HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="69A7DB" />
@@ -259,9 +297,21 @@
     </option>
     <option name="GO_BLOCK_COMMENT" baseAttributes="DEFAULT_BLOCK_COMMENT" />
     <option name="GO_BUILTIN_CONSTANT" baseAttributes="DEFAULT_CONSTANT" />
-    <option name="GO_BUILTIN_FUNCTION" baseAttributes="DEFAULT_STATIC_METHOD" />
-    <option name="GO_BUILTIN_FUNCTION_CALL" baseAttributes="DEFAULT_STATIC_METHOD" />
-    <option name="GO_BUILTIN_TYPE_REFERENCE" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="GO_BUILTIN_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="F6B453" />
+      </value>
+    </option>
+    <option name="GO_BUILTIN_FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="F6B453" />
+      </value>
+    </option>
+    <option name="GO_BUILTIN_TYPE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
     <option name="GO_BUILTIN_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
     <option name="GO_COMMENT_KEYWORD">
       <value>
@@ -269,47 +319,92 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
-    <option name="GO_EXPORTED_FUNCTION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
-    <option name="GO_EXPORTED_FUNCTION_CALL" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="GO_EXPORTED_INTERFACE_REFERENCE" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
-    <option name="GO_EXPORTED_STRUCT_REFERENCE" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="GO_FUNCTION_PARAMETER" baseAttributes="PARAMETER_ATTRIBUTES" />
+    <option name="GO_EXPORTED_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
+    <option name="GO_EXPORTED_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
+    <option name="GO_EXPORTED_INTERFACE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="72A4A0" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="GO_EXPORTED_STRUCT_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="GO_FUNCTION_PARAMETER">
+      <value>
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
     <option name="GO_KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
     <option name="GO_LABEL" baseAttributes="DEFAULT_LABEL" />
     <option name="GO_LINE_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT" />
     <option name="GO_LOCAL_CONSTANT" baseAttributes="DEFAULT_CONSTANT" />
-    <option name="GO_LOCAL_FUNCTION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
-    <option name="GO_LOCAL_FUNCTION_CALL" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="GO_LOCAL_INTERFACE_REFERENCE" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
-    <option name="GO_LOCAL_STRUCT_REFERENCE" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="GO_LOCAL_VARIABLE" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="GO_METHOD_RECEIVER" baseAttributes="PARAMETER_ATTRIBUTES" />
+    <option name="GO_LOCAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
+    <option name="GO_LOCAL_FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
+    <option name="GO_LOCAL_INTERFACE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="72A4A0" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="GO_LOCAL_STRUCT_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="GO_LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="GO_METHOD_RECEIVER">
+      <value>
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
     <option name="GO_PACKAGE">
       <value>
         <option name="FOREGROUND" value="D7D7D7" />
       </value>
     </option>
     <option name="GO_PACKAGE_EXPORTED_CONSTANT" baseAttributes="DEFAULT_CONSTANT" />
-    <option name="GO_PACKAGE_EXPORTED_INTERFACE" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
-    <option name="GO_PACKAGE_EXPORTED_STRUCT" baseAttributes="CLASS_NAME_ATTRIBUTES" />
+    <option name="GO_PACKAGE_EXPORTED_INTERFACE" baseAttributes="DEFAULT_INTERFACE_NAME" />
+    <option name="GO_PACKAGE_EXPORTED_STRUCT" baseAttributes="DEFAULT_CLASS_NAME" />
     <option name="GO_PACKAGE_EXPORTED_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
     <option name="GO_PACKAGE_LOCAL_CONSTANT" baseAttributes="DEFAULT_CONSTANT" />
-    <option name="GO_PACKAGE_LOCAL_INTERFACE" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
-    <option name="GO_PACKAGE_LOCAL_STRUCT" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="GO_PACKAGE_LOCAL_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
-    <option name="GO_SCOPE_VARIABLE" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="GO_STRUCT_EXPORTED_MEMBER" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="GO_STRUCT_LOCAL_MEMBER" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="GO_TYPE_REFERENCE" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="GO_TYPE_SPECIFICATION" baseAttributes="CLASS_NAME_ATTRIBUTES" />
+    <option name="GO_PACKAGE_LOCAL_INTERFACE" baseAttributes="DEFAULT_INTERFACE_NAME" />
+    <option name="GO_PACKAGE_LOCAL_STRUCT" baseAttributes="DEFAULT_CLASS_NAME" />
+    <option name="GO_PACKAGE_LOCAL_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="GO_SCOPE_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="GO_STRUCT_EXPORTED_MEMBER">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="GO_STRUCT_LOCAL_MEMBER">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="GO_TYPE_REFERENCE">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="GO_TYPE_SPECIFICATION" baseAttributes="DEFAULT_CLASS_NAME" />
     <option name="GO_VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="GROOVY_KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="GString" baseAttributes="DEFAULT_STRING" />
+    <option name="GROOVY_KEYWORD" baseAttributes="JAVA_KEYWORD" />
+    <option name="GString" baseAttributes="JAVA_STRING" />
     <option name="Groovy method declaration" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
     <option name="Groovy parameter" baseAttributes="PARAMETER_ATTRIBUTES" />
     <option name="Groovy var" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="Groovydoc comment" baseAttributes="DEFAULT_DOC_COMMENT" />
-    <option name="Groovydoc tag" baseAttributes="DEFAULT_DOC_COMMENT_TAG" />
+    <option name="Groovydoc comment" baseAttributes="JAVA_DOC_COMMENT" />
+    <option name="Groovydoc tag" baseAttributes="JAVA_DOC_TAG" />
     <option name="HTML_ATTRIBUTE_NAME" baseAttributes="DEFAULT_ATTRIBUTE" />
     <option name="HTML_ATTRIBUTE_VALUE" baseAttributes="DEFAULT_STRING" />
     <option name="HTML_TAG" baseAttributes="DEFAULT_TAG" />
@@ -341,34 +436,42 @@
     <option name="Instance property reference ID" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
     <option name="INTERFACE_NAME_ATTRIBUTES" baseAttributes="DEFAULT_INTERFACE_NAME" />
     <option name="Interface name" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
-    <option name="Invalid string escape" baseAttributes="DEFAULT_INVALID_STRING_ESCAPE" />
+    <option name="Invalid string escape" baseAttributes="JAVA_INVALID_STRING_ESCAPE" />
     <option name="JS.BLOCK_COMMENT" baseAttributes="DEFAULT_BLOCK_COMMENT" />
-    <option name="JS.CLASS" baseAttributes="CLASS_NAME_ATTRIBUTES" />
+    <option name="JS.CLASS" baseAttributes="DEFAULT_CLASS_NAME" />
     <option name="JS.DECORATOR" baseAttributes="DEFAULT_METADATA" />
     <option name="JS.DOC_COMMENT" baseAttributes="DEFAULT_DOC_COMMENT" />
     <option name="JS.DOC_TAG" baseAttributes="DEFAULT_DOC_COMMENT_TAG" />
     <option name="JS.DOC_TAG_NAMEPATH" baseAttributes="DEFAULT_DOC_COMMENT_TAG_VALUE" />
-    <option name="JS.EXPORTED.CLASS" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="JS.EXPORTED.FUNCTION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
-    <option name="JS.EXPORTED.VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
-    <option name="JS.GLOBAL_FUNCTION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
+    <option name="JS.EXPORTED.CLASS" baseAttributes="JS.CLASS" />
+    <option name="JS.EXPORTED.FUNCTION" baseAttributes="JS.GLOBAL_FUNCTION" />
+    <option name="JS.EXPORTED.VARIABLE" baseAttributes="JS.GLOBAL_VARIABLE" />
+    <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
     <option name="JS.GLOBAL_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
-    <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="JS.INSTANCE_MEMBER_VARIABLE" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="JS.INTERFACE" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
+    <option name="JS.INSTANCE_MEMBER_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="JS.INSTANCE_MEMBER_VARIABLE" baseAttributes="DEFAULT_INSTANCE_FIELD" />
+    <option name="JS.INTERFACE" baseAttributes="DEFAULT_INTERFACE_NAME" />
     <option name="JS.INVALID_STRING_ESCAPE" baseAttributes="DEFAULT_INVALID_STRING_ESCAPE" />
     <option name="JS.KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
     <option name="JS.LINE_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT" />
-    <option name="JS.LOCAL_FUNCTION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
-    <option name="JS.LOCAL_VARIABLE" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
+    <option name="JS.LOCAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
+    <option name="JS.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="JS.NUMBER" baseAttributes="DEFAULT_NUMBER" />
-    <option name="JS.PARAMETER" baseAttributes="PARAMETER_ATTRIBUTES" />
-    <option name="JS.PRIMITIVE.TYPE" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="JS.PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="JS.PRIMITIVE.TYPE" baseAttributes="JS.KEYWORD" />
     <option name="JS.REGEXP" baseAttributes="DEFAULT_STRING" />
-    <option name="JS.STATIC_MEMBER_FUNCTION" baseAttributes="STATIC_METHOD_ATTRIBUTES" />
-    <option name="JS.STATIC_MEMBER_VARIABLE" baseAttributes="STATIC_FIELD_ATTRIBUTES" />
+    <option name="JS.STATIC_MEMBER_FUNCTION" baseAttributes="DEFAULT_STATIC_METHOD" />
+    <option name="JS.STATIC_MEMBER_VARIABLE" baseAttributes="DEFAULT_STATIC_FIELD" />
     <option name="JS.STRING" baseAttributes="DEFAULT_STRING" />
-    <option name="JS.TYPE_ALIAS" baseAttributes="CLASS_NAME_ATTRIBUTES" />
+    <option name="JS.TYPE_ALIAS">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
     <option name="JS.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
     <option name="KOTLIN_ABSTRACT_CLASS">
       <value>
@@ -417,7 +520,11 @@
     <option name="Line comment" baseAttributes="DEFAULT_LINE_COMMENT" />
     <option name="METHOD_CALL_ATTRIBUTES" baseAttributes="DEFAULT_FUNCTION_CALL" />
     <option name="METHOD_DECLARATION_ATTRIBUTES" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
-    <option name="LESS_VARIABLE" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
+    <option name="LESS_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
     <option name="MARKDOWN_AUTO_LINK">
       <value>
         <option name="EFFECT_COLOR" value="D9D9D9" />
@@ -535,21 +642,52 @@
       </value>
     </option>
     <option name="Method call" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="Number" baseAttributes="DEFAULT_NUMBER" />
+    <option name="Number" baseAttributes="JAVA_NUMBER" />
     <option name="PHP_ALIAS_REFERENCE">
       <value />
     </option>
     <option name="PHP_EXEC_COMMAND_ID" baseAttributes="DEFAULT_STRING" />
-    <option name="PHP_HEREDOC_ID" baseAttributes="DEFAULT_STRING" />
-    <option name="PHP_PARAMETER" baseAttributes="PARAMETER_ATTRIBUTES" />
-    <option name="PHP_THIS_VAR" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="PHP_VAR" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="PROPERTIES.INVALID_STRING_ESCAPE" baseAttributes="DEFAULT_INVALID_STRING_ESCAPE" />
-    <option name="PROPERTIES.KEY" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="PROPERTIES.KEY_VALUE_SEPARATOR" baseAttributes="DEFAULT_OPERATION_SIGN" />
-    <option name="PROPERTIES.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="PY.BUILTIN_NAME" baseAttributes="DEFAULT_STATIC_METHOD" />
-    <option name="PY.CLASS_DEFINITION" baseAttributes="CLASS_NAME_ATTRIBUTES" />
+    <option name="PHP_HEREDOC_ID">
+      <value>
+        <option name="FOREGROUND" value="D89E79" />
+      </value>
+    </option>
+    <option name="PHP_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="PHP_THIS_VAR">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="PHP_VAR" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="PROPERTIES.INVALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="F16767" />
+        <option name="EFFECT_COLOR" value="EF6969" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="PROPERTIES.KEY">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="PROPERTIES.KEY_VALUE_SEPARATOR">
+      <value>
+        <option name="FOREGROUND" value="BCBEC4" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="PROPERTIES.VALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="EDC98F" />
+      </value>
+    </option>
+    <option name="PY.BUILTIN_NAME">
+      <value>
+        <option name="FOREGROUND" value="F6B453" />
+      </value>
+    </option>
+    <option name="PY.CLASS_DEFINITION" baseAttributes="DEFAULT_CLASS_NAME" />
     <option name="PY.DECORATOR" baseAttributes="DEFAULT_METADATA" />
     <option name="PY.DOC_COMMENT" baseAttributes="DEFAULT_DOC_COMMENT" />
     <option name="PY.DOC_COMMENT_TAG" baseAttributes="DEFAULT_DOC_COMMENT_TAG" />
@@ -557,28 +695,45 @@
     <option name="PY.FSTRING_FRAGMENT_BRACES" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
     <option name="PY.FSTRING_FRAGMENT_COLON" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
     <option name="PY.FSTRING_FRAGMENT_TYPE_CONVERSION" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="PY.FUNCTION_CALL" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="PY.FUNC_DEFINITION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
+    <option name="PY.FUNCTION_CALL" baseAttributes="DEFAULT_FUNCTION_CALL" />
+    <option name="PY.FUNC_DEFINITION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
     <option name="PY.INVALID_STRING_ESCAPE" baseAttributes="DEFAULT_INVALID_STRING_ESCAPE" />
     <option name="PY.KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="PY.KEYWORD_ARGUMENT" baseAttributes="KOTLIN_NAMED_ARGUMENT" />
+    <option name="PY.KEYWORD_ARGUMENT">
+      <value>
+        <option name="FOREGROUND" value="97AACB" />
+      </value>
+    </option>
     <option name="PY.LINE_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT" />
-    <option name="PY.LOCAL_VARIABLE" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="PY.METHOD_CALL" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="PY.NESTED_FUNC_DEFINITION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
+    <option name="PY.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
+    <option name="PY.METHOD_CALL" baseAttributes="PY.FUNCTION_CALL" />
+    <option name="PY.NESTED_FUNC_DEFINITION" baseAttributes="PY.FUNC_DEFINITION" />
     <option name="PY.NUMBER" baseAttributes="DEFAULT_NUMBER" />
-    <option name="PY.PARAMETER" baseAttributes="PARAMETER_ATTRIBUTES" />
-    <option name="PY.PREDEFINED_DEFINITION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
-    <option name="PY.PREDEFINED_USAGE" baseAttributes="METHOD_CALL_ATTRIBUTES" />
+    <option name="PY.PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
+    <option name="PY.PREDEFINED_DEFINITION">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="PY.PREDEFINED_USAGE">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
     <option name="PY.SELF_PARAMETER" baseAttributes="DEFAULT_PARAMETER" />
     <option name="PY.STRING.B" baseAttributes="DEFAULT_STRING" />
     <option name="PY.STRING.U" baseAttributes="DEFAULT_STRING" />
-    <option name="PY.TYPE_PARAMETER" baseAttributes="TYPE_PARAMETER_NAME_ATTRIBUTES" />
-    <option name="PY.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="REGEXP.CHAR_CLASS" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="ReSharper.ASP_NET_RAZOR_CODE_BLOCK">
+    <option name="PY.TYPE_PARAMETER">
       <value>
+        <option name="FOREGROUND" value="9FDBC8" />
+        <option name="FONT_TYPE" value="0" />
         <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="PY.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
+    <option name="REGEXP.CHAR_CLASS">
+      <value>
+        <option name="FOREGROUND" value="EDC98F" />
       </value>
     </option>
     <option name="SEARCH_RESULT_ATTRIBUTES">
@@ -586,61 +741,282 @@
         <option name="FOREGROUND" value="DDDDA8" />
       </value>
     </option>
-    <option name="SQL_COLUMN" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="SQL_DATABASE_OBJECT" baseAttributes="TEXT" />
-    <option name="SQL_PROCEDURE" baseAttributes="DEFAULT_FUNCTION_CALL" />
-    <option name="SQL_SCHEMA" baseAttributes="TEXT" />
-    <option name="SQL_TABLE" baseAttributes="CLASS_NAME_ATTRIBUTES" />
+    <option name="SQL_COLUMN" baseAttributes="DEFAULT_INSTANCE_FIELD" />
+    <option name="SQL_DATABASE_OBJECT">
+      <value>
+        <option name="FOREGROUND" value="D7D7D7" />
+        <option name="BACKGROUND" value="191A1C" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="SQL_PROCEDURE">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="SQL_SCHEMA">
+      <value>
+        <option name="FOREGROUND" value="D7D7D7" />
+        <option name="BACKGROUND" value="191A1C" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="SQL_TABLE" baseAttributes="DEFAULT_CLASS_NAME" />
     <option name="STATIC_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_FIELD" />
-    <option name="STATIC_FINAL_FIELD_ATTRIBUTES" baseAttributes="DEFAULT_CONSTANT" />
+    <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
     <option name="STATIC_METHOD_ATTRIBUTES" baseAttributes="DEFAULT_STATIC_METHOD" />
-    <option name="Scala Abstract class" baseAttributes="ABSTRACT_CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala Annotation attribute name" baseAttributes="DEFAULT_METADATA" />
-    <option name="Scala Annotation name" baseAttributes="DEFAULT_METADATA" />
-    <option name="Scala Anonymous Parameter" baseAttributes="PARAMETER_ATTRIBUTES" />
-    <option name="Scala Block comment" baseAttributes="DEFAULT_BLOCK_COMMENT" />
-    <option name="Scala Case class field" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="Scala Case class var field" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="Scala Class" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala Class method call" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="Scala Enum" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala Enum Class Case" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala Enum Singleton Case" baseAttributes="STATIC_FINAL_FIELD_ATTRIBUTES" />
-    <option name="Scala For statement value" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="Scala Given" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="Scala Immutable Collection" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala Invalid escape in string" baseAttributes="DEFAULT_INVALID_STRING_ESCAPE" />
-    <option name="Scala Keyword" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="Scala Line comment" baseAttributes="DEFAULT_LINE_COMMENT" />
-    <option name="Scala Local lazy val/var" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="Scala Local method call" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="Scala Local value" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="Scala Local variable" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="Scala Method declaration" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
-    <option name="Scala Mutable Collection" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala Named Argument" baseAttributes="KOTLIN_NAMED_ARGUMENT" />
-    <option name="Scala Number" baseAttributes="DEFAULT_NUMBER" />
-    <option name="Scala Object" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala Object method call" baseAttributes="STATIC_METHOD_ATTRIBUTES" />
-    <option name="Scala Parameter" baseAttributes="PARAMETER_ATTRIBUTES" />
-    <option name="Scala Pattern value" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="Scala Predefined types" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala String" baseAttributes="DEFAULT_STRING" />
-    <option name="Scala Template lazy val/var" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="Scala Template val" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="Scala Template var" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="Scala Trait" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
-    <option name="Scala Type Alias" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="Scala Type parameter" baseAttributes="TYPE_PARAMETER_NAME_ATTRIBUTES" />
-    <option name="Scala Valid escape in string" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="ScalaDoc @param value" baseAttributes="DEFAULT_DOC_COMMENT_TAG_VALUE" />
-    <option name="ScalaDoc comment" baseAttributes="DEFAULT_DOC_COMMENT" />
-    <option name="ScalaDoc comment markup" baseAttributes="DEFAULT_DOC_MARKUP" />
-    <option name="ScalaDoc comment tag" baseAttributes="DEFAULT_DOC_COMMENT_TAG" />
-    <option name="StandardF Java Collection" baseAttributes="CLASS_NAME_ATTRIBUTES" />
+    <option name="Scala Abstract class">
+      <value>
+        <option name="FOREGROUND" value="56B9AD" />
+      </value>
+    </option>
+    <option name="Scala Annotation attribute name">
+      <value>
+        <option name="FOREGROUND" value="DEDEC8" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Annotation name">
+      <value>
+        <option name="FOREGROUND" value="DEDEC8" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Anonymous Parameter">
+      <value>
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Block comment">
+      <value>
+        <option name="FOREGROUND" value="859DAA" />
+      </value>
+    </option>
+    <option name="Scala Case class field">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Case class var field">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Class">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="Scala Class method call">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="Scala Enum">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="Scala Enum Class Case">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="Scala Enum Singleton Case">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="Scala For statement value">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="Scala Given">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Immutable Collection">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="Scala Invalid escape in string">
+      <value>
+        <option name="FOREGROUND" value="F16767" />
+        <option name="EFFECT_COLOR" value="EF6969" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="Scala Keyword">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="Scala Line comment">
+      <value>
+        <option name="FOREGROUND" value="859DAA" />
+      </value>
+    </option>
+    <option name="Scala Local lazy val/var">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="Scala Local method call">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="Scala Local value">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="Scala Local variable">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="Scala Method declaration">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="Scala Mutable Collection">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="Scala Named Argument">
+      <value>
+        <option name="FOREGROUND" value="97AACB" />
+      </value>
+    </option>
+    <option name="Scala Number">
+      <value>
+        <option name="FOREGROUND" value="B4D0A8" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="Scala Object">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="Scala Object method call">
+      <value>
+        <option name="FOREGROUND" value="F6B453" />
+      </value>
+    </option>
+    <option name="Scala Parameter">
+      <value>
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Pattern value">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="Scala Predefined types">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="Scala String">
+      <value>
+        <option name="FOREGROUND" value="D89E79" />
+      </value>
+    </option>
+    <option name="Scala Template lazy val/var">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Template val">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Template var">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Trait">
+      <value>
+        <option name="FOREGROUND" value="72A4A0" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="Scala Type Alias">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="Scala Type parameter">
+      <value>
+        <option name="FOREGROUND" value="9FDBC8" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="Scala Valid escape in string">
+      <value>
+        <option name="FOREGROUND" value="EDC98F" />
+      </value>
+    </option>
+    <option name="ScalaDoc @param value">
+      <value>
+        <option name="FOREGROUND" value="CFD3D3" />
+      </value>
+    </option>
+    <option name="ScalaDoc comment">
+      <value>
+        <option name="FOREGROUND" value="859DAA" />
+      </value>
+    </option>
+    <option name="ScalaDoc comment markup">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+      </value>
+    </option>
+    <option name="ScalaDoc comment tag">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="StandardF Java Collection">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
     <option name="Static method access" baseAttributes="STATIC_METHOD_ATTRIBUTES" />
-    <option name="Static property reference ID" baseAttributes="STATIC_FINAL_FIELD_ATTRIBUTES" />
-    <option name="String" baseAttributes="DEFAULT_STRING" />
+    <option name="Static property reference ID">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="String" baseAttributes="JAVA_STRING" />
     <option name="TEMPLATE_VARIABLE_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="D5ABD5" />
@@ -659,7 +1035,7 @@
         <option name="FONT_TYPE" value="1" />
       </value>
     </option>
-    <option name="TS.PRIMITIVE.TYPES" baseAttributes="DEFAULT_KEYWORD" />
+    <option name="TS.PRIMITIVE.TYPES" baseAttributes="TS.KEYWORD" />
     <option name="TYPE_PARAMETER_NAME_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="9FDBC8" />
@@ -667,9 +1043,9 @@
         <option name="EFFECT_TYPE" value="5" />
       </value>
     </option>
-    <option name="Trait name" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
+    <option name="Trait name" baseAttributes="Interface name" />
     <option name="Type parameter" baseAttributes="TYPE_PARAMETER_NAME_ATTRIBUTES" />
-    <option name="Valid string escape" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
+    <option name="Valid string escape" baseAttributes="JAVA_VALID_STRING_ESCAPE" />
     <option name="WARNING_ATTRIBUTES">
       <value>
         <option name="EFFECT_COLOR" value="CFA34D" />
@@ -693,49 +1069,243 @@
     </option>
     <option name="XML_TAG_DATA" baseAttributes="TEXT" />
     <option name="XML_TAG_NAME" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="XPATH.KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="XPATH.XPATH_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
-    <option name="org.rust.ASSOC_FUNCTION" baseAttributes="STATIC_METHOD_ATTRIBUTES" />
-    <option name="org.rust.ASSOC_FUNCTION_CALL" baseAttributes="STATIC_METHOD_ATTRIBUTES" />
-    <option name="org.rust.ATTRIBUTE" baseAttributes="DEFAULT_METADATA" />
-    <option name="org.rust.BLOCK_COMMENT" baseAttributes="DEFAULT_BLOCK_COMMENT" />
-    <option name="org.rust.CHAR" baseAttributes="DEFAULT_STRING" />
-    <option name="org.rust.CONSTANT" baseAttributes="STATIC_FINAL_FIELD_ATTRIBUTES" />
-    <option name="org.rust.CONST_PARAMETER" baseAttributes="DEFAULT_CONSTANT" />
-    <option name="org.rust.DOC_CODE" baseAttributes="DEFAULT_DOC_MARKUP" />
-    <option name="org.rust.DOC_COMMENT" baseAttributes="DEFAULT_DOC_COMMENT" />
-    <option name="org.rust.DOC_HEADING" baseAttributes="DEFAULT_DOC_COMMENT_TAG" />
-    <option name="org.rust.DOC_LINK" baseAttributes="DEFAULT_DOC_COMMENT_TAG_VALUE" />
-    <option name="org.rust.ENUM" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="org.rust.ENUM_VARIANT" baseAttributes="STATIC_FINAL_FIELD_ATTRIBUTES" />
-    <option name="org.rust.EOL_COMMENT" baseAttributes="DEFAULT_LINE_COMMENT" />
-    <option name="org.rust.FIELD" baseAttributes="INSTANCE_FIELD_ATTRIBUTES" />
-    <option name="org.rust.FORMAT_PARAMETER" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="org.rust.FUNCTION" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
-    <option name="org.rust.FUNCTION_CALL" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="org.rust.INVALID_STRING_ESCAPE" baseAttributes="DEFAULT_INVALID_STRING_ESCAPE" />
-    <option name="org.rust.KEYWORD" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="org.rust.KEYWORD_UNSAFE" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="org.rust.LIFETIME" baseAttributes="TYPE_PARAMETER_NAME_ATTRIBUTES" />
-    <option name="org.rust.MACRO" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="org.rust.METHOD" baseAttributes="METHOD_DECLARATION_ATTRIBUTES" />
-    <option name="org.rust.METHOD_CALL" baseAttributes="METHOD_CALL_ATTRIBUTES" />
-    <option name="org.rust.MUT_BINDING" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
-    <option name="org.rust.MUT_PARAMETER" baseAttributes="PARAMETER_ATTRIBUTES" />
-    <option name="org.rust.MUT_STATIC" baseAttributes="STATIC_FIELD_ATTRIBUTES" />
-    <option name="org.rust.NUMBER" baseAttributes="DEFAULT_NUMBER" />
-    <option name="org.rust.PARAMETER" baseAttributes="PARAMETER_ATTRIBUTES" />
-    <option name="org.rust.PRIMITIVE_TYPE" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="org.rust.Q_OPERATOR" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="org.rust.SELF_PARAMETER" baseAttributes="DEFAULT_KEYWORD" />
-    <option name="org.rust.STATIC" baseAttributes="STATIC_FIELD_ATTRIBUTES" />
-    <option name="org.rust.STRING" baseAttributes="DEFAULT_STRING" />
-    <option name="org.rust.STRUCT" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="org.rust.TRAIT" baseAttributes="INTERFACE_NAME_ATTRIBUTES" />
-    <option name="org.rust.TYPE_ALIAS" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="org.rust.TYPE_PARAMETER" baseAttributes="TYPE_PARAMETER_NAME_ATTRIBUTES" />
-    <option name="org.rust.UNION" baseAttributes="CLASS_NAME_ATTRIBUTES" />
-    <option name="org.rust.VALID_STRING_ESCAPE" baseAttributes="DEFAULT_VALID_STRING_ESCAPE" />
-    <option name="org.rust.VARIABLE" baseAttributes="LOCAL_VARIABLE_ATTRIBUTES" />
+    <option name="XPATH.KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="XPATH.XPATH_VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="org.rust.ASSOC_FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="F6B453" />
+      </value>
+    </option>
+    <option name="org.rust.ASSOC_FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="F6B453" />
+      </value>
+    </option>
+    <option name="org.rust.ATTRIBUTE">
+      <value>
+        <option name="FOREGROUND" value="DEDEC8" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="org.rust.BLOCK_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="859DAA" />
+      </value>
+    </option>
+    <option name="org.rust.CHAR">
+      <value>
+        <option name="FOREGROUND" value="D89E79" />
+      </value>
+    </option>
+    <option name="org.rust.CONSTANT">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.CONST_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.DOC_CODE">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+      </value>
+    </option>
+    <option name="org.rust.DOC_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="859DAA" />
+      </value>
+    </option>
+    <option name="org.rust.DOC_HEADING">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.DOC_LINK">
+      <value>
+        <option name="FOREGROUND" value="CFD3D3" />
+      </value>
+    </option>
+    <option name="org.rust.ENUM">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="org.rust.ENUM_VARIANT">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.EOL_COMMENT">
+      <value>
+        <option name="FOREGROUND" value="859DAA" />
+      </value>
+    </option>
+    <option name="org.rust.FIELD">
+      <value>
+        <option name="FOREGROUND" value="AAD6F3" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="org.rust.FORMAT_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="EDC98F" />
+      </value>
+    </option>
+    <option name="org.rust.FUNCTION">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="org.rust.FUNCTION_CALL">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="org.rust.INVALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="F16767" />
+        <option name="EFFECT_COLOR" value="EF6969" />
+        <option name="EFFECT_TYPE" value="2" />
+      </value>
+    </option>
+    <option name="org.rust.KEYWORD">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="org.rust.KEYWORD_UNSAFE">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="org.rust.LIFETIME">
+      <value>
+        <option name="FOREGROUND" value="9FDBC8" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="org.rust.MACRO">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="org.rust.METHOD">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="org.rust.METHOD_CALL">
+      <value>
+        <option name="FOREGROUND" value="DDDDA8" />
+      </value>
+    </option>
+    <option name="org.rust.MUT_BINDING">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
+    <option name="org.rust.MUT_PARAMETER">
+      <value>
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="org.rust.MUT_STATIC">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.NUMBER">
+      <value>
+        <option name="FOREGROUND" value="B4D0A8" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="org.rust.PARAMETER">
+      <value>
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="org.rust.PRIMITIVE_TYPE">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="org.rust.Q_OPERATOR">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="org.rust.SELF_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="D5ABD5" />
+      </value>
+    </option>
+    <option name="org.rust.STATIC">
+      <value>
+        <option name="FOREGROUND" value="DEAF66" />
+        <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="org.rust.STRING">
+      <value>
+        <option name="FOREGROUND" value="D89E79" />
+      </value>
+    </option>
+    <option name="org.rust.STRUCT">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="org.rust.TRAIT">
+      <value>
+        <option name="FOREGROUND" value="72A4A0" />
+        <option name="FONT_TYPE" value="0" />
+      </value>
+    </option>
+    <option name="org.rust.TYPE_ALIAS">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="org.rust.TYPE_PARAMETER">
+      <value>
+        <option name="FOREGROUND" value="9FDBC8" />
+        <option name="FONT_TYPE" value="0" />
+        <option name="EFFECT_TYPE" value="5" />
+      </value>
+    </option>
+    <option name="org.rust.UNION">
+      <value>
+        <option name="FOREGROUND" value="68DACE" />
+      </value>
+    </option>
+    <option name="org.rust.VALID_STRING_ESCAPE">
+      <value>
+        <option name="FOREGROUND" value="EDC98F" />
+      </value>
+    </option>
+    <option name="org.rust.VARIABLE">
+      <value>
+        <option name="FOREGROUND" value="D4DCE8" />
+      </value>
+    </option>
   </attributes>
 </scheme>
