@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scheme name="straxess dark refined" version="142" parent_scheme="Islands Dark">
+<scheme name="straxess dark" version="142" parent_scheme="Islands Dark">
   <option name="FONT_SCALE" value="1.0" />
   <metaInfo>
     <property name="ide">idea</property>
